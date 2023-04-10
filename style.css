@@ -10,6 +10,28 @@ h1 {
   margin-top: 30px;
 }
 
+.wavy-text {
+  text-decoration: underline;
+  text-decoration-color: #4a4a4a;
+  text-decoration-style: wavy;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 .form-group {
   margin: 10px 0;
 }
