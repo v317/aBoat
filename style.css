@@ -3,6 +3,7 @@ body {
   font-family: Roboto;
   background-color: #222;
   color: #fff;
+  font-size: 16px;
 }
 
 h1 {
@@ -64,7 +65,7 @@ label {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -73,6 +74,7 @@ label {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 3px;
+  width: 5%;
 }
 
 .btn-primary {
@@ -108,6 +110,68 @@ label {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
+.collapsible {
+	  background-color: #222;
+	  color: #eee;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	}
+
+.active, .collapsible:hover {
+	  background-color: #333;
+	}
+
+.content {
+	  padding: 0 18px;
+	  display: none;
+	  overflow: hidden;
+	  background-color: #111;
+	  color: #eee;
+	}
+
+.active:after {
+	  content: "\2212"; /* Unicode character for a minus sign */
+	}
+
+.collapsible:after {
+	  content: "\002B"; /* Unicode character for a plus sign */
+		color: #eee;
+	}
+
+@media (prefers-color-scheme: light) {
+	  /* Light mode styles */
+	  body {
+	    background-color: #eee;
+	    color: #444;
+	  }
+
+.collapsible {
+	    background-color: #eee;
+	    color: #444;
+	  }
+
+.active, .collapsible:hover {
+	    background-color: #ccc;
+	  }
+
+.content {
+	    background-color: white;
+	    color: #444;
+	  }
+	}
+
+@media (max-width: 600px) {
+	  /* Mobile styles */
+.content {
+	    display: block;
+	  }
+	}
+	
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
   body {

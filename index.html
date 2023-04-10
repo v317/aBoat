@@ -37,13 +37,34 @@
     </form>
 	<br>
 	<b><font color=red>NOTICE:</font>
-	<p><b>This tool is provided as is and for free to use for non-illegal activities.</p>
+	<button class="collapsible">Click me to expand</button>
+<div class="content">
+  <p>	<p><b>This tool is provided as is and for free to use for non-illegal activities.</p>
 	<p>By using aBoat, you agree to these terms. <br>
 	<p>Developer takes zero responsibility for what the user (you) use this tool for.</b>
 	<p>---------------------
 	<p>No data will be sent to anywhere else but to your webhooks destination!</p>
 	<p>Also no data is stored anywhere, not even as a cookie. Here at aBoat you are on your own!</p>
 	<p>-v317</p>
+</div>
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.display === "block") {
+	      content.style.display = "none";
+	    } else {
+	      content.style.display = "block";
+	    }
+	  });
+	}
+</script>
+
 	</center>
 	<!-- This is where the magic happens ;) -->
     <script src="main.js"></script>
