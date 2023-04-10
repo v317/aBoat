@@ -4,6 +4,9 @@ Version 2 is the first public release of aBoat!
 
 # Setup
 No setup required. You can use it right away after downloading or upload files to your web server!
+if you want to display a popup after sending a message, uncomment 
+```//alert("Notice: message sent!");``` 
+from main.js
 
 # Release Download
 https://github.com/v317/aBoat/archive/refs/heads/main.zip
