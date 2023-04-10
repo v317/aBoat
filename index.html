@@ -1,0 +1,44 @@
+<!-- aBoat v2 by v317 -->
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- UTF-8 is used to display emojis -->
+    <meta charset="UTF-8">
+    <title>🚢 aBoat v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <center>
+    <h1>🚢 aBoat V2</h1>
+	<p>Type in your webhooks URL and a message, then click "Send". Easy!</p>
+    <form id="form1">
+      <div class="form-group">
+        <label for="WebHookURL">Webhook URL (required):</label>
+        <input type="text" id="WebHookURL" name="WebHookURL" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="botMessage">Message (required):</label>
+        <textarea id="botMessage" name="botMessage" class="form-control"></textarea required>
+      </div>
+	  <div class="form-group">
+          <label for="imageUrl">Image URL (optional):</label>
+          <input type="text" id="imageUrl" name="imageUrl" class="form-control">
+        </div>
+      <button type="button" id="sendButton" class="btn btn-primary">Send</button>
+    </form>
+	<br>
+	<b><font color=red>DISCLAIMER:</font>
+	<p><b>This tool is provided as is and for free to use for non-illegal activities.</b></p>
+	<p>---------------------
+	<p>No data will be sent to anywhere else but to your webhooks destination!</p>
+	<p>Also no data is stored anywhere, not even as a cookie. Here at aBoat you are on your own!</p>
+	<p>-v317</p>
+	</center>
+	<!-- This is where the magic happens ;) -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/* aBoat Style */
+body {
+  font-family: Roboto;
+  background-color: #222;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background-color: #444;
+  color: #fff;
+}
+
+.botMessage {
+  width: 75%;
+  height: 400%;
+  padding: 5px;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background-color: #444;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active {
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: not-allowed;
+}
+
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    font-size: 16px;
+    height: 80px;
+  }
+
+  .botMessage {
+    width: 90%;
+    height: 800%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .botMessage {
+    width: 80%;
+    height: 600%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .form-control {
+    font-size: 18px;
+    height: 50px;
+    width: 40%;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-group {
+    margin: 20px;
+  }
+
+  .btn {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  /* Center the button horizontally */
+  .text-center {
+    text-align: center;
+  }
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+
