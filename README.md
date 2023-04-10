@@ -1,5 +1,6 @@
 # 🚢 aBoat Version 2
 aBoat is Discord webhook bot platform, that you can use to send messages and images to your Discord server!
+Version 2 is the first public release of aBoat!
 
 # Setup
 No setup required. You can use it right away after downloading or upload files to your web server!
