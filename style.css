@@ -1,14 +1,23 @@
-/* aBoat Style */
+/* Set background color */
 body {
-  font-family: Roboto;
-  background-color: #222;
-  color: #fff;
+  background-color: #1c1c1e;
+  color: #f5f5f5;
+}
+
+/* Set font family and size */
+body, input, textarea {
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
+/* Set header styles */
+.title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 h1 {
-  text-align: center;
-  margin-top: 30px;
+  font-size: 48px;
 }
 
 .wavy-text {
@@ -32,234 +41,107 @@ h1 {
   }
 }
 
-
+/* Set form styles */
 .form-group {
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.form-control {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #666;
-  border-radius: 3px;
-  background-color: #444;
-  color: #fff;
+input, textarea {
+  width: 1100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2e;
+  color: #f5f5f5;
 }
 
-.botMessage {
-  width: 75%;
-  height: 400%;
-  padding: 5px;
-  border: 1px solid #666;
-  border-radius: 3px;
-  background-color: #444;
-  color: #fff;
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #2196F3;
 }
 
+.botmessage	{
+  width: 1100px;
+  height: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2e;
+  color: #f5f5f5;
+}
+
+/* Button styles */
 .btn {
   display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00c8ff;
+  border: 2px solid #00c8ff;
+  border-radius: 25px;
   cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 3px;
+  text-shadow: 0 0 2px #000000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  outline: none;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+/* Button text with black outline */
+.btn span {
+  display: inline-block;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
 }
 
-.btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #45d7ff;
+  border: 2px solid	#45d7ff;
 }
 
-.btn-primary:active, .btn-primary:focus {
-  color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+/* Active effect for buttons */
+.btn:active {
+  background-color: #1787e3;
+  border: 2px solid #1787e3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active {
-  background-color: #007bff;
-  border-color: #007bff;
-  cursor: not-allowed;
+
+/* Set Github button styles */
+.github-button {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.collapsible {
-	  background-color: #222;
-	  color: #eee;
-	  cursor: pointer;
-	  padding: 18px;
-	  width: 100%;
-	  border: none;
-	  text-align: left;
-	  outline: none;
-	  font-size: 15px;
-	}
-
-.active, .collapsible:hover {
-	  background-color: #333;
-	}
-
-.content {
-	  padding: 0 18px;
-	  display: none;
-	  overflow: hidden;
-	  background-color: #111;
-	  color: #eee;
-	}
-
-.active:after {
-	  content: "\2212"; /* Unicode character for a minus sign */
-	}
-
-.collapsible:after {
-	  content: "\002B"; /* Unicode character for a plus sign */
-		color: #eee;
-	}
-
-@media (prefers-color-scheme: light) {
-	  /* Light mode styles */
-	  body {
-	    background-color: #eee;
-	    color: #444;
-	  }
-
-.collapsible {
-	    background-color: #eee;
-	    color: #444;
-	  }
-
-.active, .collapsible:hover {
-	    background-color: #ccc;
-	  }
-
-.content {
-	    background-color: white;
-	    color: #444;
-	  }
-	}
-
-@media (max-width: 600px) {
-	  /* Mobile styles */
-.content {
-	    display: block;
-	  }
-	}
-	
 /* Mobile styles */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .form-control {
-    font-size: 16px;
-    height: 80px;
-  }
-
-  .botMessage {
-    width: 90%;
-    height: 800%;
-  }
-
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .botMessage {
-    width: 80%;
-    height: 600%;
-  }
-
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 36px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-  }
-
-  .form-control {
-    font-size: 18px;
-    height: 50px;
-    width: 40%;
+@media (max-width: 768px) {
+  /* Set header styles */
+  .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
-  .form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  h1 {
+    font-size: 36px;
+  }
+  
+  /* Set form styles */
+  input, textarea, .botmessage {
+    width: 100%;
+    max-width: 400px;
   }
 
-  .form-group {
-    margin: 20px;
-  }
-
-  .btn {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-
-  /* Center the button horizontally */
-  .text-center {
-    text-align: center;
+  /* Set Github button styles */
+  .github-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
-.error-message {
-  color: red;
-  margin-top: 10px;
-}
-
-
-

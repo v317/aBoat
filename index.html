@@ -20,50 +20,32 @@
 	<p>Type in your webhooks URL and a message, then click "Send". Easy!</p>
 	<br>
 		<b><font color=red>Did someone ask you to send a token, password or something else over aBoat? DO NOT DO IT!</font>
+		<br>		<br>
     <form id="form1">
       <div class="form-group">
         <label for="WebHookURL"><b>Webhook URL (required):</b></label>
-        <input type="text" id="WebHookURL" name="WebHookURL" class="form-control" required>
+        <input type="text" id="WebHookURL" name="WebHookURL" class="webhookurl" required>
       </div>
       <div class="form-group">
         <label for="botMessage"><b>Message (required):</b></label>
-        <textarea id="botMessage" name="botMessage" class="form-control"></textarea required>
+        <textarea id="botMessage" name="botMessage" class="botmessage"></textarea required>
       </div>
 	  <div class="form-group">
           <label for="imageUrl"><b>Image URL (optional):</b></label>
-          <input type="text" id="imageUrl" name="imageUrl" class="form-control">
+          <input type="text" id="imageUrl" name="imageUrl" class="imageurl">
         </div>
       <button type="button" id="sendButton" class="btn btn-primary">Send</button>
     </form>
 	<br>
 	<b><font color=red>NOTICE:</font>
-	<button class="collapsible">Click me to expand</button>
 <div class="content">
   <p>	<p><b>This tool is provided as is and for free to use for non-illegal activities.</p>
 	<p>By using aBoat, you agree to these terms. <br>
 	<p>Developer takes zero responsibility for what the user (you) use this tool for.</b>
-	<p>---------------------
-	<p>No data will be sent to anywhere else but to your webhooks destination!</p>
-	<p>Also no data is stored anywhere, not even as a cookie. Here at aBoat you are on your own!</p>
-	<p>-v317</p>
+	<br>
+<br>
+<p>Check project on Github
 </div>
-
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-	    this.classList.toggle("active");
-	    var content = this.nextElementSibling;
-	    if (content.style.display === "block") {
-	      content.style.display = "none";
-	    } else {
-	      content.style.display = "block";
-	    }
-	  });
-	}
-</script>
 <br>
 <a class="github-button" href="https://github.com/v317/aboat" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star v317/aboat on GitHub">Star</a>
 	</center>
