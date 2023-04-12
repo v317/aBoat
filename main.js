@@ -5,6 +5,11 @@ document.getElementById("sendButton").addEventListener("click", function() {
   var messageContent = document.getElementById("botMessage").value;
   var imageUrl = document.getElementById("imageUrl").value;
 
+  if (webhookUrl === '' || messageContent === '') {
+    alert("p-pwease fill in all wequiwed fiewds (* ^ ω ^)");
+    return;
+  }
+
   var httpReq = new XMLHttpRequest();
   httpReq.open("POST", webhookUrl);
   httpReq.setRequestHeader("Content-Type", "application/json");
@@ -20,7 +25,7 @@ document.getElementById("sendButton").addEventListener("click", function() {
       if (httpReq.status === 204) {
         //alert("Notice: message sent!");
       } else {
-        alert("Error: " + httpReq.statusText);
+        alert("error ");
       }
     }
   };
