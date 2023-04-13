@@ -2,10 +2,6 @@
 body {
   background-color: #1c1c1e;
   color: #f5f5f5;
-}
-
-/* Set font family and size */
-body, input, textarea {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -53,12 +49,15 @@ label {
 }
 
 input, textarea {
-  width: 1100px;
+  width: 100%;
+  max-width: 800px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #2c2c2e;
   color: #f5f5f5;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 input:focus, textarea:focus {
@@ -66,19 +65,13 @@ input:focus, textarea:focus {
   box-shadow: 0 0 5px #2196F3;
 }
 
-.botmessage	{
-  width: 1100px;
+.botmessage {
   height: 300px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #2c2c2e;
-  color: #f5f5f5;
 }
 
 /* Button styles */
 .btn {
-   display: inline-block;
+  display: inline-block;
   font-family: Whitney, "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 11pt;
@@ -97,7 +90,7 @@ input:focus, textarea:focus {
 }
 
 .notice {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 /* Set Github button styles */
@@ -114,11 +107,11 @@ input:focus, textarea:focus {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   h1 {
     font-size: 36px;
   }
-  
+
   /* Set form styles */
   input, textarea, .botmessage {
     width: 100%;
@@ -130,8 +123,66 @@ input:focus, textarea:focus {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  .notice {
+    font-size: 12px;
+  }
+}
+
+/* Mobile styles for 3-5" inch devices */
+@media (max-width: 480px) {
+  /* Set header styles */
+  .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Set form styles */
+  input, textarea, .botmessage {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Set Github button styles */
+  .github-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .notice {
+	font-size: 10px;
+  }
+}
+/* Mobile styles for 6-12" inch devices */
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Set header styles */
+  .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  /* Set form styles */
+  input, textarea, .botmessage {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* Set Github button styles */
+  .github-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   
   .notice {
 	font-size: 12px;
+  }
 }
-}
+
