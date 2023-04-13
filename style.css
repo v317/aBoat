@@ -93,6 +93,11 @@ input:focus, textarea:focus {
   font-size: 12px;
 }
 
+.warning {
+  color: red;
+text-shadow: 0 0 10px #FF5733 , 0 0 20px #000;
+}
+
 /* Set Github button styles */
 .github-button {
   display: block;
